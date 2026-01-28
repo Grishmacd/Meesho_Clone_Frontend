@@ -86,6 +86,7 @@ body{
     height: 190px;
     margin-left: 30px;
 }
+
 .gold_banner{
     margin-top: 40px;
     height: 600px;
@@ -169,9 +170,6 @@ position: absolute;
     width: 100%; 
 }
 
-
-
-
 .products-section {
   background: #f8f8f8;
   padding: 30px 0;
@@ -184,7 +182,6 @@ position: absolute;
   gap: 24px;
 }
 
-/* LEFT COLUMN */
 .left-column {
   width: 300px;
 }
@@ -332,3 +329,152 @@ position: absolute;
   line-height: 1.6;
 }
 
+
+@media (max-width:600px){
+  .header{
+    padding: 10px 12px;
+  }
+
+  .logo img{
+    height: 38px;
+  }
+
+  .header input{
+    width: 100%;
+    padding: 12px;
+    font-size: 14px;
+  }
+  .top-links{
+    display: none; 
+  }
+
+  .categories{
+    gap: 18px;
+    padding: 12px;
+    font-size: 14px;
+    overflow-x: auto; /*to get that scroll bar at category*/ 
+  }
+  .main_banner img{
+    width: 100%;
+    height: 170px;
+    border-radius: 6px;
+  }
+  .trust-strip{
+    padding: 10px;
+  }
+
+  .trust-box{
+    align-items: center;
+    gap:40px;
+    margin-left: 9px;
+    border-radius: 8px;
+  }
+
+  .trust-item{
+    margin-left: 0;
+    font-size: 12px;
+  }
+  .p1{
+    margin-left: 5px;
+  }
+
+  .options{
+    margin-left: 40px;
+    margin-top: 10px;
+  }
+
+  .op{
+    width: 110px;
+    height: 150px;
+    margin: 8px;
+  }
+  .op:nth-child(n+4){ /* this will hide any img after 3rd if class names are similar in code  and we cant use display:none thn we can use this */
+    display: none;
+  }
+
+  .gold_banner{
+    width: 100%;
+    height: 250px;
+    margin-top: 20px;
+  }
+  .og h2{
+    font-size: 22px;
+    margin-left: 20px;
+  }
+
+  .og h2 img{
+    left: 200px;
+    width: 35px;
+  }
+
+  .og h1{
+    font-size: 15px;
+  }
+
+  .og_img{
+    width: 130px;
+    height: 200px;
+    margin: 10px;
+  }
+  .og_img:nth-child(n+4){ 
+    display: none;
+  }
+
+  .Moving_sec{
+    padding: 40px;
+  }
+
+  .Moving_sec img{
+    width: 100px;
+    height: 80px;
+    position: static;
+    margin: 10px;
+  }
+  
+  .Moving_sec img:nth-child(n+4){ 
+    display: none;
+  }
+  .Banner_7thsec{
+    width: 100%;
+    height: 210px;
+  }
+  
+  .products-layout{
+    flex-direction: column;/*photos vertically top to bottom*/
+  }
+
+  .left-column{
+    width: 100%;
+  }
+
+  .right-column{
+    width: 100%;
+  }
+   .products-grid{
+    display: flex;
+    justify-content: center;
+    
+  }
+
+  .product-card{
+    width: 47%;
+  }
+
+  .footer-wrap{
+    width: 100%;
+    flex-direction: column; /* arranges flex items vertically (top to bottom) instead of side by side */
+    gap: 25px;
+    padding: 0 15px;
+  }
+
+  .f1, .f2, .f3, .f4, .f5{
+    width: 100%;
+  }
+   .store{
+    justify-content: flex-start;
+  }
+
+  .icons{
+    margin-top:10px;
+  }
+}
